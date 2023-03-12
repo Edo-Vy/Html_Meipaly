@@ -1,0 +1,102 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+}
+
+/* header */
+#header__content {
+
+    position: fixed;
+    /* giúp thẻ khi di chuyển theo khi scroll web */
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.header__logo {
+    font-size: 30px;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav-list li a {
+    color: #fff;
+    /* transition-property: all;
+    transition-duration: 0.35s;
+    transition-timing-function: linear; */
+    transition: all 0.3s linear;
+}
+
+.header__nav-list li a:hover {
+
+    color: #e62b4a;
+}
+
+.header__nav-list li a.active {
+    color: #e62b4a;
+}
+
+/* carousel */
+
+.carousel {
+
+    background-image: url(../images/home_slider.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* full màn hình : vh */
+}
+
+.carousel--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__content {
+    text-align: center;
+    color: #fff;
+}
+
+.carousel__content p {
+    font-size: 25px;
+}
+
+.carousel__content h1 {
+    font-size: 75px;
+    line-height: 90px;
+}
+
+.carousel__content button{
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #e62b4a;
+    transition: all 0.3s linear;
+    border: 1px solid #e62b4a;
+    cursor: pointer;
+   
+}
+.carousel__content button:hover{
+    background-color: #af2239;
+}
