@@ -1,67 +1,196 @@
 <!DOCTYPE html>
 <!-- khai báo html 5-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meipaly</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./css/reset.css" />
 
-    <!-- cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div id="header__content">
-        <a class="header__logo" href="#">
-          <i class="fab fa-atlassian"></i>
-          <span>meipaly</span>
-        </a>
-        <nav>
-          <!-- thẻ chuyển hướng -->
-          <ul class="header__nav-list">
-            <li>
-              <a class="active" href="#">HOME</a>
-            </li>
-            <li>
-              <a href="/">SERVICES</a>
-            </li>
-            <li>
-              <a href="/">SHOWCASE</a>
-            </li>
-            <li>
-              <a href="/">BLOG</a>
-            </li>
-            <li>
-              <a href="/">ABOUT US</a>
-            </li>
-            <li>
-              <a href="/">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meipaly</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <!-- facybox -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div id="header__content">
+      <a class="header__logo" href="#">
+        <i class="fab fa-atlassian"></i>
+        <span>meipaly</span>
+      </a>
+      <nav>
+        <!-- thẻ chuyển hướng -->
+        <ul class="header__nav-list">
+          <li>
+            <a class="active" href="#">HOME</a>
+          </li>
+          <li>
+            <a href="/">SERVICES</a>
+          </li>
+          <li>
+            <a href="/">SHOWCASE</a>
+          </li>
+          <li>
+            <a href="/">BLOG</a>
+          </li>
+          <li>
+            <a href="/">ABOUT US</a>
+          </li>
+          <li>
+            <a href="/">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- carousel -->
+
+  <section class="carousel carousel--center">
+    <div class="carousel__content">
+      <p>WELCOME TO MEIPALY AGENCY</p>
+      <h1>
+        SMART WEB
+        <br />
+        DESIGN AGENCY
+      </h1>
+      <button>READ MORE</button>
+    </div>
+  </section>
+  <!-- service -->
+  <section class="service">
+    <div class="service__content">
+      <div class="service--title">
+        <p>OUR PORTFOLIO</p>
+        <h2>WORK SHOWCASE</h2>
+        <p>
+          We are committed to providing our customers with exceptional service
+          while offering our employees the best training.
+        </p>
       </div>
-    </header>
-    <!-- carousel -->
-    <section class="carousel carousel--center">
-      <div class="carousel__content">
-        <p>WELCOME TO MEIPALY AGENCY</p>
-        <h1>
-          SMART WEB
-          <br>
-          DESIGN AGENCY
-        </h1>
-        <button>READ MORE</button>
+      <div class="service--slider"></div>
+    </div>
+  </section>
+  <!-- showcase -->
+  <section class="showcase">
+    <div class="container">
+      <div class="showcase--list ">
+        <div class="showcase--item">
+          <img src="./images/showcase_img_1.webp" alt="" />
+          <div class="showcase-overplay">
+            <div class="showcase-search">
+              <div class="showcase-search-bg">
+                <a href="./images/showcase_img_1.webp" data-fancybox="gallery" data-caption="Caption #1">
+                <i class="fas fa-search-plus"></i></a>
+              </div>
+
+            </div>
+            <div class="showcase-content">
+              <h3>LOGO</h3>
+              <p>FLIPPIN BIRD</p>
+            </div>
+          </div>
+        </div>
+        <div class="showcase--item">
+          <img src="./images/showcase_img_2.webp" alt="" />
+          <div class="showcase-overplay">
+            <div class="showcase-search">
+              <div class="showcase-search-bg">
+                <a href="./images/showcase_img_2.webp" data-fancybox="gallery" data-caption="Caption #2">
+                  <i class="fas fa-search-plus"></i></a>
+              </div>
+
+            </div>
+            <div class="showcase-content">
+              <h3>LOGO</h3>
+              <p>FLIPPIN BIRD</p>
+            </div>
+          </div>
+        </div>
+        <div class="showcase--item">
+          <img src="./images/showcase_img_3.webp" alt="" />
+          <div class="showcase-overplay">
+            <div class="showcase-search">
+              <div class="showcase-search-bg">
+                <a href="./images/showcase_img_3.webp" data-fancybox="gallery" data-caption="Caption #3">
+                  <i class="fas fa-search-plus"></i></a>
+              </div>
+
+            </div>
+            <div class="showcase-content">
+              <h3>LOGO</h3>
+              <p>FLIPPIN BIRD</p>
+            </div>
+          </div>
+        </div>
+        <div class="showcase--item">
+          <img src="./images/showcase_img_5.webp" alt="" />
+          <div class="showcase-overplay">
+            <div class="showcase-search">
+              <div class="showcase-search-bg">
+                <a href="./images/showcase_img_5.webp" data-fancybox="gallery" data-caption="Caption #4">
+                  <i class="fas fa-search-plus"></i></a>
+              </div>
+
+            </div>
+            <div class="showcase-content">
+              <h3>LOGO</h3>
+              <p>FLIPPIN BIRD</p>
+            </div>
+          </div>
+        </div>
+        <div class="showcase--item">
+          <img src="./images/showcase_img_6.webp" alt="" />
+          <div class="showcase-overplay">
+            <div class="showcase-search">
+              <div class="showcase-search-bg">
+                <a href="./images/showcase_img_6.webp" data-fancybox="gallery" data-caption="Caption #5">
+                  <i class="fas fa-search-plus"></i></a>
+              </div>
+
+            </div>
+            <div class="showcase-content">
+              <h3>LOGO</h3>
+              <p>FLIPPIN BIRD</p>
+            </div>
+          </div>
+        </div>
+        <div class="showcase--item">
+          <img src="./images/showcase_img_7.webp" alt="" />
+          <div class="showcase-overplay">
+            <div class="showcase-search">
+              <div class="showcase-search-bg">
+                <a href="./images/showcase_img_7.webp" data-fancybox="gallery">
+                  <i class="fas fa-search-plus"></i></a>
+              </div>
+
+            </div>
+            <div class="showcase-content">
+              <h3>LOGO</h3>
+              <p>FLIPPIN BIRD</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+  <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+</body>
+
 </html>
