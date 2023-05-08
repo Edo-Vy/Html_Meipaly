@@ -211,3 +211,19 @@ body {
 .count-item span {
     font-size: 30px;
 }
+/* digital  */
+.digital {
+    width: 100%;
+
+    background-image: url(../images/bussiness_img_1.jpg);
+    background-attachment: fixed; /* cố định*/
+    background-position: center;
+}
+.digital-content{
+    padding: 100px;
+}
+.digital-video{
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+}
