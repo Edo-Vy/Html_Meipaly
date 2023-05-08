@@ -227,3 +227,42 @@ body {
     object-fit: cover;
     text-align: center;
 }
+/* contact */
+.contact-map{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+.contact-control{
+    margin-top: 10px;
+    margin-left: 10px;
+   
+}
+.text-control{
+    width: 100%;
+    padding: 15px;
+   
+}
+.inf-control {
+    padding: 20px 20px;
+}
+.btn-submit{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color :#000;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    
+}
+.btn-submit{
+    padding: 20px 20px;
+    
+}
+.btn-submit:hover{
+    background-color:#e62b4a;
+}
