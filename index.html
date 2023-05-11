@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="./css/reset.css" />
   <!-- facybox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <!-- slick -->
+  <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css">
   <!-- cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -68,20 +71,84 @@
       <button>READ MORE</button>
     </div>
   </section>
-  <!-- service -->
-  <section class="service">
-    <div class="service__content">
-      <div class="service--title">
-        <p>OUR PORTFOLIO</p>
-        <h2>WORK SHOWCASE</h2>
-        <p>
-          We are committed to providing our customers with exceptional service
-          while offering our employees the best training.
-        </p>
+
+  <!-- businesses -->
+  <section class="businesses">
+    <div class="businesses-content">
+      <p>SERVICES WE ARE OFFERING</p>
+      <h2>WE DESIGN DIGITAL PRODUCTS THAT HELP GROW BUSINESSES.</h2>
+      <span>We are committed to providing our customers with exceptional service while offering
+        our employees the best training.</span>
+    </div>
+    <div class="businesses-wrap">
+      <div class="your-class">
+        <div class="businesses-card">
+          <div class="businesses-card-content">
+            <i class="fa fa-dice-d6"></i>
+            <p>
+              APP MOBILE
+              <br>
+              DEVELOPMENT
+            </p>
+          </div>
+        </div>
+        <div class="businesses-card">
+          <div class="businesses-card-content">
+            <i class="fab fa-autoprefixer"></i>
+            <p>
+              APP MOBILE
+              <br>
+              DEVELOPMENT
+            </p>
+          </div>
+        </div>
+        <div class="businesses-card">
+          <div class="businesses-card-content">
+            <i class="fab fa-500px"></i>
+            <p>
+              APP MOBILE
+              <br>
+              DEVELOPMENT
+            </p>
+          </div>
+        </div>
+        <div class="businesses-card">
+          <div class="businesses-card-content">
+            <i class="fa fa-blog"></i>
+            <p>
+              APP MOBILE
+              <br>
+              DEVELOPMENT
+            </p>
+          </div>
+        </div>
+        <div class="businesses-card">
+          <div class="businesses-card-content">
+            <i class="fa fa-blog"></i>
+            <p>
+              APP MOBILE
+              <br>
+              DEVELOPMENT
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="service--slider"></div>
     </div>
   </section>
+    <!-- service -->
+    <section class="service">
+      <div class="service__content">
+        <div class="service--title">
+          <p>OUR PORTFOLIO</p>
+          <h2>WORK SHOWCASE</h2>
+          <p>
+            We are committed to providing our customers with exceptional service
+            while offering our employees the best training.
+          </p>
+        </div>
+        <div class="service--slider"></div>
+      </div>
+    </section>
   <!-- showcase -->
   <section class="showcase">
     <div class="container">
@@ -262,7 +329,8 @@
         <input class="inf-control" type="email" placeholder="Email" id="email" />
       </div>
       <div class="contact-control">
-        <textarea class="text-ask inf-control" name="" placeholder="Ask question...." rows="10" id="text-control"></textarea>
+        <textarea class="text-ask inf-control" name="" placeholder="Ask question...." rows="10"
+          id="text-control"></textarea>
       </div>
       <div class="button-submit">
         <button class="btn-submit">SUBMIT</button>
@@ -281,6 +349,19 @@
   <script>
     $('.counter').countUp();
 
+  </script>
+  <!-- slick -->
+  <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.your-class').slick({
+        infinite: true, // lặp hoài ko ngừng
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows : true,
+        dots : true,
+      });
+    });
   </script>
 
 </body>

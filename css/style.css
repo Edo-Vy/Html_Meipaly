@@ -104,6 +104,32 @@ body {
 .carousel__content button:hover{
     background-color: #af2239;
 }
+/* business */
+.businesses{
+    background-color: #000000;
+    text-align: center;
+    padding: 50px 0;
+}
+.businesses-content p { 
+    color:#af2239;
+    font-size: 16px;
+}
+.businesses-content h2 { 
+    color:#fff;
+    font-size: 30px;
+    margin: 15px;
+}
+.businesses-content span { 
+    color:#848482;
+    font-size: 20px;
+}
+.businesses-card{
+   padding: 20px;
+}
+.businesses-card-content{
+    background: #848482;
+    min-height: 300px;
+}
 /* service */
 .service--title {
     margin: 20px 20px;
