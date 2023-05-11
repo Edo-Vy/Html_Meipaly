@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- khai báo html 5-->
+<!-- KHAI BÁO HTML5-->
 <html lang="en">
 
 <head>
@@ -7,37 +7,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meipaly</title>
-  <!-- css -->
-  <link rel="stylesheet" href="./css/reset.css" />
-  <!-- facybox -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-  <!-- slick -->
-  <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css">
-  <!-- cdn -->
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet" />
 
+  <!-- SLICK -->
+  <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css">
+
+  <!-- FANCY BOX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <header>
-    <div id="header__content">
+    <div class="header__content">
       <a class="header__logo" href="#">
         <i class="fab fa-atlassian"></i>
         <span>meipaly</span>
       </a>
       <nav>
         <!-- thẻ chuyển hướng -->
-        <ul class="header__nav-list">
-          <li>
-            <a class="active" href="#">HOME</a>
+        <ul>
+          <li class="active">
+            <a href="#">HOME</a>
           </li>
           <li>
             <a href="/">SERVICES</a>
@@ -58,17 +61,19 @@
       </nav>
     </div>
   </header>
-  <!-- carousel -->
 
-  <section class="carousel carousel--center">
+  <!--  CAROUSEL -->
+
+  <section class="carousel">
     <div class="carousel__content">
       <p>WELCOME TO MEIPALY AGENCY</p>
       <h1>
-        SMART WEB
-        <br />
-        DESIGN AGENCY
+        SMART WEB<br>DESIGN AGENCY
       </h1>
       <button>READ MORE</button>
+      <div class="carousel__scroll">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </div>
   </section>
 
@@ -135,20 +140,20 @@
       </div>
     </div>
   </section>
-    <!-- service -->
-    <section class="service">
-      <div class="service__content">
-        <div class="service--title">
-          <p>OUR PORTFOLIO</p>
-          <h2>WORK SHOWCASE</h2>
-          <p>
-            We are committed to providing our customers with exceptional service
-            while offering our employees the best training.
-          </p>
-        </div>
-        <div class="service--slider"></div>
+  <!-- service -->
+  <section class="service">
+    <div class="service__content">
+      <div class="service--title">
+        <p>OUR PORTFOLIO</p>
+        <h2>WORK SHOWCASE</h2>
+        <p>
+          We are committed to providing our customers with exceptional service
+          while offering our employees the best training.
+        </p>
       </div>
-    </section>
+      <div class="service--slider"></div>
+    </div>
+  </section>
   <!-- showcase -->
   <section class="showcase">
     <div class="container">
@@ -358,8 +363,8 @@
         infinite: true, // lặp hoài ko ngừng
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows : true,
-        dots : true,
+        arrows: true,
+        dots: true,
       });
     });
   </script>
