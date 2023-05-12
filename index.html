@@ -18,14 +18,20 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- SLICK -->
-  <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
 
   <!-- FANCY BOX -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/reset.css" />
+  <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -77,219 +83,220 @@
     </div>
   </section>
 
-  <!-- businesses -->
-  <section class="businesses">
-    <div class="businesses-content">
-      <p>SERVICES WE ARE OFFERING</p>
-      <h2>WE DESIGN DIGITAL PRODUCTS THAT HELP GROW BUSINESSES.</h2>
-      <span>We are committed to providing our customers with exceptional service while offering
-        our employees the best training.</span>
-    </div>
-    <div class="businesses-wrap">
-      <div class="your-class">
-        <div class="businesses-card">
-          <div class="businesses-card-content">
-            <i class="fa fa-dice-d6"></i>
-            <p>
-              APP MOBILE
-              <br>
-              DEVELOPMENT
-            </p>
-          </div>
-        </div>
-        <div class="businesses-card">
-          <div class="businesses-card-content">
-            <i class="fab fa-autoprefixer"></i>
-            <p>
-              APP MOBILE
-              <br>
-              DEVELOPMENT
-            </p>
-          </div>
-        </div>
-        <div class="businesses-card">
-          <div class="businesses-card-content">
-            <i class="fab fa-500px"></i>
-            <p>
-              APP MOBILE
-              <br>
-              DEVELOPMENT
-            </p>
-          </div>
-        </div>
-        <div class="businesses-card">
-          <div class="businesses-card-content">
-            <i class="fa fa-blog"></i>
-            <p>
-              APP MOBILE
-              <br>
-              DEVELOPMENT
-            </p>
-          </div>
-        </div>
-        <div class="businesses-card">
-          <div class="businesses-card-content">
-            <i class="fa fa-blog"></i>
-            <p>
-              APP MOBILE
-              <br>
-              DEVELOPMENT
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- service -->
+  <!-- SERVICE -->
   <section class="service">
     <div class="service__content">
-      <div class="service--title">
-        <p>OUR PORTFOLIO</p>
-        <h2>WORK SHOWCASE</h2>
-        <p>
-          We are committed to providing our customers with exceptional service
-          while offering our employees the best training.
-        </p>
+      <div class="title">
+        <p>SERVICES WE ARE OFFERING</p>
+        <h2>WE DESIGN DIGITAL PRODUCTS THAT HELP GROW BUSINESSES.</h2>
+        <p>We are committed to providing our customers with exceptional service while offering <br>
+          our employees the best training.</p>
       </div>
-      <div class="service--slider"></div>
+      <div class="service__slider">
+        <div class="slick-content">
+          <div class="item">
+            <i class="fa fa-dice-d6"></i>
+            <p>
+              APP MOBILE<br>DEVELOPMENT
+            </p>
+          </div>
+
+          <div class="item">
+            <i class="fab fa-autoprefixer"></i>
+            <p>
+              DIGITAL<br> MARKETING
+            </p>
+          </div>
+
+          <div class="item">
+            <i class="fab fa-500px"></i>
+            <p>
+              SEO &amp; CONTENT <br>WRITING
+            </p>
+          </div>
+
+
+          <div class="item">
+            <i class="fa fa-blog"></i>
+            <p>
+              WEBSITE<br>DEVELOPMENT
+            </p>
+          </div>
+
+
+          <div class="item">
+            <i class="fab fa-battle-net"></i>
+            <p>
+              SEO &amp; CONTENT <br>WRITING
+            </p>
+          </div>
+
+
+          <div class="item">
+            <i class="fa fa-memory"></i>
+            <p>
+              APP MOBILE<br>DEVELOPMENT
+            </p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+
   </section>
-  <!-- showcase -->
+
+  <!-- SHOWCASE -->
   <section class="showcase">
-    <div class="container">
-      <div class="showcase--list ">
-        <div class="showcase--item">
+    <div class="title title--black">
+      <p>OUR PORTFOLIO</p>
+      <h2>WORK SHOWCASE</h2>
+      <p>We are committed to providing our customers with exceptional service while offering our <br>
+        employees the best training.</p>
+    </div>
+    <div class="showcase__content">
+      <div class="showcase__list" id="lightgallery">
+
+        <div class="showcase__item">
           <img src="./images/showcase_img_1.webp" alt="" />
-          <div class="showcase-overplay">
-            <div class="showcase-search">
-              <div class="showcase-search-bg">
-                <a href="./images/showcase_img_1.webp" data-fancybox="gallery" data-caption="Caption #1">
-                  <i class="fas fa-search-plus"></i></a>
-              </div>
-
+          <div class="showcase__overlay">
+            <div class="showcase__icons">
+              <a href="./images/showcase_img_1.webp" data-fancybox="gallery" data-caption="Caption #1">
+                <i class="fa fa-search-plus"></i>
+              </a>
             </div>
-            <div class="showcase-content">
-              <h3>LOGO</h3>
-              <p>FLIPPIN BIRD</p>
+            <div class="showcase__text">
+              <p>LOGO</p>
+              <h3>FLIPPIN BIRD</h3>
             </div>
           </div>
         </div>
-        <div class="showcase--item">
+
+        <div class="showcase__item">
           <img src="./images/showcase_img_2.webp" alt="" />
-          <div class="showcase-overplay">
-            <div class="showcase-search">
-              <div class="showcase-search-bg">
-                <a href="./images/showcase_img_2.webp" data-fancybox="gallery" data-caption="Caption #2">
-                  <i class="fas fa-search-plus"></i></a>
-              </div>
-
+          <div class="showcase__overlay">
+            <div class="showcase__icons">
+              <a href="./images/showcase_img_2.webp" data-fancybox="gallery" data-caption="Caption #1">
+                <i class="fa fa-search-plus"></i>
+              </a>
             </div>
-            <div class="showcase-content">
-              <h3>LOGO</h3>
-              <p>FLIPPIN BIRD</p>
+            <div class="showcase__text">
+              <p>LOGO</p>
+              <h3>FLIPPIN BIRD</h3>
             </div>
           </div>
         </div>
-        <div class="showcase--item">
+        <div class="showcase__item">
           <img src="./images/showcase_img_3.webp" alt="" />
-          <div class="showcase-overplay">
-            <div class="showcase-search">
-              <div class="showcase-search-bg">
-                <a href="./images/showcase_img_3.webp" data-fancybox="gallery" data-caption="Caption #3">
-                  <i class="fas fa-search-plus"></i></a>
-              </div>
-
+          <div class="showcase__overlay">
+            <div class="showcase__icons">
+              <a href="./images/showcase_img_3.webp" data-fancybox="gallery" data-caption="Caption #1">
+                <i class="fa fa-search-plus"></i>
+              </a>
             </div>
-            <div class="showcase-content">
-              <h3>LOGO</h3>
-              <p>FLIPPIN BIRD</p>
+            <div class="showcase__text">
+              <p>LOGO</p>
+              <h3>FLIPPIN BIRD</h3>
             </div>
           </div>
         </div>
-        <div class="showcase--item">
+        <div class="showcase__item">
           <img src="./images/showcase_img_5.webp" alt="" />
-          <div class="showcase-overplay">
-            <div class="showcase-search">
-              <div class="showcase-search-bg">
-                <a href="./images/showcase_img_5.webp" data-fancybox="gallery" data-caption="Caption #4">
-                  <i class="fas fa-search-plus"></i></a>
-              </div>
-
+          <div class="showcase__overlay">
+            <div class="showcase__icons">
+              <a href="./images/showcase_img_5.webp" data-fancybox="gallery" data-caption="Caption #1">
+                <i class="fa fa-search-plus"></i>
+              </a>
             </div>
-            <div class="showcase-content">
-              <h3>LOGO</h3>
-              <p>FLIPPIN BIRD</p>
+            <div class="showcase__text">
+              <p>LOGO</p>
+              <h3>FLIPPIN BIRD</h3>
             </div>
           </div>
         </div>
-        <div class="showcase--item">
+        <div class="showcase__item">
           <img src="./images/showcase_img_6.webp" alt="" />
-          <div class="showcase-overplay">
-            <div class="showcase-search">
-              <div class="showcase-search-bg">
-                <a href="./images/showcase_img_6.webp" data-fancybox="gallery" data-caption="Caption #5">
-                  <i class="fas fa-search-plus"></i></a>
-              </div>
-
+          <div class="showcase__overlay">
+            <div class="showcase__icons">
+              <a href="./images/showcase_img_6.webp" data-fancybox="gallery" data-caption="Caption #1">
+                <i class="fa fa-search-plus"></i>
+              </a>
             </div>
-            <div class="showcase-content">
-              <h3>LOGO</h3>
-              <p>FLIPPIN BIRD</p>
+            <div class="showcase__text">
+              <p>LOGO</p>
+              <h3>FLIPPIN BIRD</h3>
             </div>
           </div>
         </div>
-        <div class="showcase--item">
+        <div class="showcase__item">
           <img src="./images/showcase_img_7.webp" alt="" />
-          <div class="showcase-overplay">
-            <div class="showcase-search">
-              <div class="showcase-search-bg">
-                <a href="./images/showcase_img_7.webp" data-fancybox="gallery" data-caption="Caption #6">
-                  <i class="fas fa-search-plus"></i></a>
-              </div>
-
+          <div class="showcase__overlay">
+            <div class="showcase__icons">
+              <a href="./images/showcase_img_7.webp" data-fancybox="gallery" data-caption="Caption #1">
+                <i class="fa fa-search-plus"></i>
+              </a>
             </div>
-            <div class="showcase-content">
-              <h3>LOGO</h3>
-              <p>FLIPPIN BIRD</p>
+            <div class="showcase__text">
+              <p>LOGO</p>
+              <h3>FLIPPIN BIRD</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- blog -->
+
+  <!-- BLOG -->
   <section class="blog">
-    <div class="blog-list">
-      <div class="blog-item blog-item-1">
-        <img src="./images/grid-metro-1.jpg" alt="" />
-      </div>
-      <div class="blog-item">
-        <img src="./images/grid-metro-2.jpg" alt="" />
-      </div>
-      <div class="blog-item">
-        <img src="./images/grid-metro-3.jpg" alt="" />
-      </div>
-      <div class="blog-item">
-        <img src="./images/grid-metro-4.jpg" alt="" />
-      </div>
-      <div class="blog-item">
-        <img src="./images/grid-metro-5.jpg" alt="" />
-      </div>
-      <div class="blog-item">
-        <img src="./images/grid-metro-6.jpg" alt="" />
-      </div>
-      <div class="blog-item">
-        <img src="./images/grid-metro-7.jpg" alt="" />
-      </div>
-      <div class="blog-item">
-        <img src="./images/grid-metro-8.jpg" alt="" />
-      </div>
-      <div class="blog-item">
-        <img src="./images/grid-metro-9.jpg" alt="" />
-      </div>
-      <div class="blog-item blog-item-10">
-        <img src="./images/grid-metro-10.jpg" alt="" />
-      </div>
+    <div class="title title--black">
+      <p>OUR NEWS & ARTICLES</p>
+      <h2>LATEST BLOG POSTS</h2>
+      <p>We are committed to providing our customers with exceptional service while offering our
+        <br>
+        employees the best training.
+      </p>
+    </div>
+    <div class="blog__content">
+      <div class="blog__item blog__metro1">
+        <img src="./images/grid-metro-1.jpg" alt="metro">
+       
+    </div>
+    <div class="blog__item">
+        <img src="./images/grid-metro-2.jpg" alt="metro">
+        
+    </div>
+    <div class="blog__item">
+        <img src="./images/grid-metro-3.jpg" alt="metro">
+       
+    </div>
+    <div class="blog__item">
+        <img src="./images/grid-metro-4.jpg" alt="metro">
+      
+    </div>
+    <div class="blog__item">
+        <img src="./images/grid-metro-5.jpg" alt="metro">
+       
+    </div>
+    <div class="blog__item">
+        <img src="./images/grid-metro-6.jpg" alt="metro">
+     
+    </div>
+    <div class="blog__item">
+        <img src="./images/grid-metro-7.jpg" alt="metro">
+       
+    </div>
+    <div class="blog__item">
+        <img src="./images/grid-metro-8.jpg" alt="metro">
+      
+    </div>
+    <div class="blog__item">
+        <img src="./images/grid-metro-9.jpg" alt="metro">
+       
+    </div>
+    <div class="blog__item blog__metro10">
+        <img src="./images/grid-metro-10.jpg" alt="metro">
+       
+    </div>
     </div>
   </section>
   <!-- counter -->
@@ -356,15 +363,26 @@
 
   </script>
   <!-- slick -->
-  <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"></script>
+
+  <!-- Fancy -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
-      $('.your-class').slick({
-        infinite: true, // lặp hoài ko ngừng
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
+      $('.slick-content').slick({
+        infinite: true,
+        slidesToShow: 5,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 1100,
+        arrows: false,
         dots: true,
+        prevArrow: '<button type="button" class="service-prev"><i class="fa fa-long-arrow-alt-left"></i></button>',
+        nextArrow: '<button type="button" class="service-next"><i class="fa fa-long-arrow-alt-right"></i></button>'
       });
     });
   </script>
