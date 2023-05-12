@@ -468,23 +468,33 @@ header {
     font-size: 20px;
     color: #888888;
 }
-/* digital  */
-.digital {
-    width: 100%;
-
+/* EXPERIENCE */
+.experience{
+    /* background-color: #F3F3F3; */
     background-image: url(../images/bussiness_img_1.jpg);
-    background-attachment: fixed; /* cố định*/
-    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
 }
-.digital-content{
-    padding: 100px;
+
+.experience__content{
+    width:75%;
+    margin:30px auto 0;
 }
-.digital-video{
-    width: 100%;
+.experience__content video{
+    width:100%;    
     object-fit: cover;
-    text-align: center;
+    border: none;
+    box-shadow: 0 2px 10px 1px rgb(0,0,0,0.5);
+    outline: none;
 }
-/* contact */
+
+.experience__content iframe{
+    width: 100%;
+    height: 640px;
+}
+
+/* CONTACT */
 .contact-map{
     display: flex;
     justify-content: center;
