@@ -333,40 +333,68 @@
       </p>
     </div>
     <div class="experience__content">
-      <video controls poster ="./images/home_slider.jpg">
+      <video controls poster="./images/home_slider.jpg">
         <!-- video : autoplay muted : tự đông phát video, loop : tự động phát laijn video -->
         <source src="./images/video.mp4" type="video/mp4">
         Your browser doesn't support HTML5 video tag.
       </video>
     </div>
   </section>
-  
+
   <!-- CONTACT -->
-  <section class="contact-map">
-    <div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d74587.86288139115!2d106.67866888251979!3d10.731270536589081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1683540280977!5m2!1svi!2s"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <section class="contact">
+    <div class="title title--black">
+
+      <h2>CONTACT</h2>
+      <p>Thank you for your interest in our website & our services. If you have any <br> questions, please write
+        us a message now!
+      </p>
     </div>
-    <div class="contact-info">
-      <div class="contact-control">
-        <input class="inf-control" type="text" placeholder="User name" id="user" />
+    <div class="contact__content">
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.980968126514!2d106.6686637!3d10.7733302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb490b64157cb9dc1!2sCybersoft!5e0!3m2!1sen!2s!4v1618408657872!5m2!1sen!2s"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      <div class="contact-control">
-        <input class="inf-control" type="email" placeholder="Email" id="email" />
-      </div>
-      <div class="contact-control">
-        <textarea class="text-ask inf-control" name="" placeholder="Ask question...." rows="10"
-          id="text-control"></textarea>
-      </div>
-      <div class="button-submit">
-        <button class="btn-submit">SUBMIT</button>
+      <div class="contact__form">
+        <form action="">
+          <input type="text" placeholder="Username">
+          <input type="email" placeholder="Email Address">
+          <textarea placeholder="Ask a Question..." name="" id="" cols="30" rows="10"></textarea>
+          <button class="btnMei">SUBMIT</button>
+        </form>
       </div>
     </div>
   </section>
-  <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__content">
+      <p>© 2021 UI-CYBERSOFT. ALL RIGHTS RESERVED.</p>
+      <div>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACKTOTOP -->
+  <a href="#" class="backToTop cd-top text-replace js-cd-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+
+  <!-- Script -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -379,7 +407,7 @@
     $('.counter').countUp();
 
   </script>
-  <!-- slick -->
+  <!-- Slick -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous"></script>
@@ -403,6 +431,11 @@
       });
     });
   </script>
+
+  <!-- BackToTop -->
+  <script src="./js/util.js"></script>
+  <script src="./js/backToTop.js"></script>
+
 
 </body>
 
